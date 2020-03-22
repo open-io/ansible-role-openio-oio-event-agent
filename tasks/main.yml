@@ -24,7 +24,6 @@
     group: "{{ item.group | default('openio') }}"
     mode: "{{ item.mode | default(0755) }}"
   with_items:
-    - path: "/etc/gridinit.d/{{ openio_event_agent_namespace }}"
     - path: "{{ openio_event_agent_sysconfig_dir }}/{{ openio_event_agent_servicename }}"
     - path: "/var/log/oio/sds/{{ openio_event_agent_namespace }}/{{ openio_event_agent_servicename }}"
       owner: "{{ syslog_user }}"
