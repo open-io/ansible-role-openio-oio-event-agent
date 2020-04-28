@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/open-io/ansible-role-openio-oio-event-agent.svg?branch=master)](https://travis-ci.org/open-io/ansible-role-openio-oio-event-agent)
+[![Build Status](https://travis-ci.org/open-io/ansible-role-openio-oio-event-agent.svg?branch=20.04)](https://travis-ci.org/open-io/ansible-role-openio-oio-event-agent)
 # Ansible role `event_agent`
 
 An Ansible role for oio-event-agent. Specifically, the responsibilities of this role are to:
