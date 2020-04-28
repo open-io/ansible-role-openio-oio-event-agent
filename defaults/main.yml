@@ -105,9 +105,10 @@ openio_event_agent_filter_quarantine:
   queue_url: "{{ openio_event_agent_queue_url }}"
 
 openio_event_agent_filter_replication:
-  use: "egg:oio#notify"
+  use: "egg:oio#replicate"
   tube: "oio-repli"
   queue_url: "{{ openio_event_agent_queue_url }}"
+  check_replication_enabled: false
 
 openio_event_agent_filter_content_improve:
   use: "egg:oio#notify"

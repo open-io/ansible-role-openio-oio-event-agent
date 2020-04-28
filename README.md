@@ -23,7 +23,7 @@ An Ansible role for oio-event-agent. Specifically, the responsibilities of this 
 | `openio_event_agent_filter_volume_index` | `dict` | Options of `volume_index` filter |
 | `openio_event_agent_filter_noop` | `dict` | Options of `noop` filter |
 | `openio_event_agent_filter_quarantine` | `dict` | Options of `quarantine` filter |
-| `openio_event_agent_filter_replication` | `dict` | Options of `replication` filter |
+| `openio_event_agent_filter_replication` | `dict` | Options of `replication` filter: `check_replication_enabled` (false), `connection_timeout` (2.0), `read_timeout` (30.0), `cache_duration` (30.0), `cache_size` (10000) |
 | `openio_event_agent_gridinit_dir` | `"/etc/gridinit.d/{{ openio_event_agent_namespace }}"` | Path to copy the gridinit conf |
 | `openio_event_agent_gridinit_file_prefix` | `""` | Maybe set it to {{ openio_ecd_namespace }}- for old gridinit's style |
 | `openio_event_agent_location` | `"{{ ansible_hostname }}.{{ openio_event_agent_serviceid }}"` | Location |
